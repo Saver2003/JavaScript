@@ -21,6 +21,7 @@
 
 .navbar-brand {
     margin-right: 5rem;
+    margin-bottom: 0.7rem;
 }
 
 .user-link, .user-link:hover {
@@ -36,7 +37,9 @@
     border-color: #fff;
     outline: none;
 }
-
+.carousel-inner img {
+    height: 524px;
+}
 .carousel-indicators li {
     width: 12px;
     height: 12px;
@@ -57,11 +60,11 @@ ol {
 }
 
 .title {
-    margin-top: 7rem;
-    font-size: 2.1rem;
+    margin-top: 6.5rem;
+    font-size: 2.6rem;
     text-align: center;
     color: #775ba3;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .text {
@@ -69,8 +72,8 @@ ol {
     text-align: center;
     font-weight: 500;
     color: #4b3f55;
-    margin-bottom: 6rem;
-    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
 }
 
 .block-1 {
@@ -80,11 +83,11 @@ ol {
 }
 
 .title-2 {
-    padding-top: 3rem;
-    font-size: 2.1rem;
+    padding-top: 4.5rem;
+    font-size: 2.6rem;
     text-align: center;
     color: #775ba3;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .block-1 img {
@@ -97,8 +100,9 @@ ol {
     border: none;
 }
 
-.card-item p {
+.card-item .card-text {
     font-size: 0.8rem;
+    line-height: 1.5rem;
     font-weight: 600;
     color: #4b3f55;
 }
@@ -114,14 +118,22 @@ ol {
     color: #775ba3;
     font-weight: 500;
 }
+
 .block-2 h3 {
     margin-top: 3rem;
+}
+.block-2 img {
+    width: 358px;
+    border-radius: 0;
 }
 .block-2 .border-line {
     border-top: 3px solid #91c5a9;
     border-bottom: 3px solid #91c5a9;
+    width: 358px;
 }
-
+.cards-photo {
+    flex-wrap: wrap;
+}
 .pad-0 {
     padding: 0;
 }
@@ -151,15 +163,17 @@ ol {
 }
 
 .btn {
-    padding: 0.3rem 4.17rem;
+    padding: 0.5rem 5rem;
     border-radius: 0;
     font-size: 1.7rem;
     color: #fff;
     border: none;
 }
+
 .btn:hover {
     color: #fff;
 }
+
 .btn-1 {
     background: #3b5998;
 }
@@ -168,21 +182,31 @@ ol {
     background: #d14333;
 }
 .btn-3 {
-    background: #ea4c88;
+    background: #3b5998;
+    padding: 0.5rem 5.18rem;
 }
 .btn-4 {
+    background: #ea4c88;
+    padding: 0.5rem 5.18rem;
+}
+
+.btn-5 {
     background: #00aced;
 }
-.btn-5 {
+
+.btn-6 {
     background: #c70c0c;
 }
+
 .footer {
     margin-top: 6rem;
     background: #54865d!important;
 }
+
 .footer span {
     font-size: 0.8rem;
 }
+
 .footer a {
     text-decoration: none;
     color: #fff;
