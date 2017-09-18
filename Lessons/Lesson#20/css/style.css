@@ -37,9 +37,11 @@
     border-color: #fff;
     outline: none;
 }
+
 .carousel-inner img {
     height: 524px;
 }
+
 .carousel-indicators li {
     width: 12px;
     height: 12px;
@@ -104,12 +106,12 @@ ol {
     font-size: 0.8rem;
     line-height: 1.5rem;
     font-weight: 600;
-    color: #4b3f55;    
+    color: #4b3f55;
 }
 
 .cards-icons {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .title-3 {
@@ -123,29 +125,35 @@ ol {
 .block-2 h3 {
     margin-top: 3rem;
 }
+
 .block-2 img {
-    width: 358px;
+    width: 100%;
     border-radius: 0;
 }
+
 .block-2 .border-line {
     border-top: 3px solid #91c5a9;
     border-bottom: 3px solid #91c5a9;
-    width: 358px;
+    width: 100%;
 }
+
 .cards-photo {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 .pad-0 {
     padding: 0;
 }
 
-.card {
-    border: none;
+.col-sm-12, col-md-12 {
+    flex: none;
 }
 
-.card img {
-    margin-bottom: -0.2rem;
+.card {
+    border: none;
+    max-width: 358px;
+    display: block;
 }
 
 .card h4 {
@@ -164,12 +172,27 @@ ol {
     font-size: 0.7rem;
 }
 
+.card-new {
+    width: 358px;
+}
+
+.btn-group {
+    width: 100%;
+}
+
 .btn {
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 0;
     border-radius: 0;
     font-size: 1.7rem;
     color: #fff;
     border: none;
+    width: 50%;
+    outline: none;
+}
+
+.btn:focus {
+    z-index: 1;
+    box-shadow: none;
 }
 
 .btn:hover {
@@ -183,13 +206,13 @@ ol {
 .btn-2 {
     background: #d14333;
 }
+
 .btn-3 {
     background: #3b5998;
-    padding: 0.5rem 5.18rem;
 }
+
 .btn-4 {
     background: #ea4c88;
-    padding: 0.5rem 5.18rem;
 }
 
 .btn-5 {
@@ -203,6 +226,7 @@ ol {
 .footer {
     margin-top: 6rem;
     background: #54865d!important;
+    padding: 2rem !important;
 }
 
 .footer span {
