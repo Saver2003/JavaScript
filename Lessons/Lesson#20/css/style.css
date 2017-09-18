@@ -108,7 +108,8 @@ ol {
 }
 
 .cards-icons {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .title-3 {
@@ -132,7 +133,8 @@ ol {
     width: 358px;
 }
 .cards-photo {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .pad-0 {
     padding: 0;
