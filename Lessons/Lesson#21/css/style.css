@@ -71,3 +71,14 @@ body {
 .latest-news__title {
     margin-bottom: 25px;
 }
+
+
+.card__img-wrap {
+    float: left;
+}
+.card__info {
+    overflow: hidden;
+}
+.card__btn {
+    float: right;
+}
