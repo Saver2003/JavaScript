@@ -1,0 +1,259 @@
+body {
+  min-width: 320px;
+  font-family: "Fjalla One", sans-serif, "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  background: "$bg-color";
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.bg-pic {
+  background-image: url(../img/bg-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+html, body, div, object, iframe, img, table, tbody, tfoot, thead, td, th, tr, form, label, legend, header, footer, nav, article, section, aside, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article, aside, footer, header, nav, section, figcaption, figure, main {
+  display: block;
+}
+
+input:focus, button:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+table, td, th, tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  cursor: pointer;
+}
+
+input [type="button"] {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+img {
+  border-style: none;
+}
+
+.site-name {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 25px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 25px;
+  float: left;
+  margin-left: 28px;
+}
+@media screen and (max-width: 500px) {
+  .site-name {
+    float: none;
+  }
+}
+
+.nav-menu__list {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  padding-top: 30px;
+  float: right;
+}
+@media screen and (max-width: 500px) {
+  .nav-menu__list {
+    float: none;
+  }
+}
+
+.nav-menu__item {
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  .nav-menu__item {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+.nav-menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  margin-right: 33px;
+}
+@media screen and (max-width: 500px) {
+  .nav-menu__link {
+    float: none;
+    padding-top: 10px;
+  }
+}
+
+.header__container {
+  height: 80px;
+  background: rgba(41, 96, 107, 0.5);
+  border: 1px solid #2a6c78;
+  margin-bottom: 137px;
+}
+
+.promo__title {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 41px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 14px;
+  letter-spacing: 5px;
+}
+
+.promo__title-small {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 31px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.button {
+  display: block;
+  width: 144px;
+  height: 56px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.promo__button {
+  display: inline-block;
+  background: transparent;
+  font-size: 17px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  padding: 12px 33px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+.promo__button::before {
+  content: "";
+  background: #fff;
+  width: 59px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+.promo__button::after {
+  content: "";
+  background: #fff;
+  width: 58px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+}
+
+.triangle {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 61px;
+  top: 35px;
+}
+
+.block-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  width: 50%;
+  display: block;
+}
