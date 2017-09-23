@@ -3,7 +3,7 @@ body {
   font-family: "Fjalla One", sans-serif, "Source Sans Pro", sans-serif;
   font-size: 16px;
   line-height: 1.3;
-  background: "$bg-color";
+  background: #29606b !important;
 }
 
 .container {
@@ -192,6 +192,7 @@ img {
   height: 56px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 120px;
 }
 
 .promo__button {
@@ -203,11 +204,11 @@ img {
   color: #fff;
   font-weight: normal;
   border: none;
-  padding: 12px 33px;
+  padding: 11px 33px;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
-  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .promo__button::before {
@@ -251,9 +252,254 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 76px;
 }
 
 .card {
   width: 50%;
   display: block;
+  text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card__item-1 {
+  background: #e84c3d;
+}
+
+.card__item-2 {
+  background: #fdbd1f;
+}
+
+.card__item-3 {
+  background: #1bbc9b;
+}
+
+.card__item-4 {
+  background: #9b58b5;
+}
+
+.image-bg {
+  margin-top: 58px;
+  display: inline-block;
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+}
+
+.card__img-1 {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+}
+
+.card__img-2 {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+}
+
+.card__img-3 {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+}
+
+.card__img-4 {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.card__title {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 31px;
+  color: #fff;
+  font-weight: normal;
+  margin: 17px 0 4px;
+}
+
+.card__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  width: 63%;
+  display: inline-block;
+  margin-bottom: 54px;
+}
+
+.personal__container {
+  text-align: center;
+}
+
+.personal__title {
+  display: block;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 29px;
+  margin-bottom: 9px;
+}
+
+.line {
+  width: 430px;
+  margin-bottom: 64px;
+  position: relative;
+  display: inline-block;
+}
+
+.personal__descr {
+  display: block;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.personal__descr::before {
+  content: "";
+  height: 1px;
+  width: 130px;
+  background: #387d89;
+  position: absolute;
+  top: 50%;
+  left: -127px;
+}
+@media screen and (max-width: 570px) {
+  .personal__descr::before {
+    display: none;
+  }
+}
+
+.personal__descr::after {
+  content: "";
+  height: 1px;
+  width: 130px;
+  background: #387d89;
+  position: absolute;
+  top: 50%;
+  right: -127px;
+}
+@media screen and (max-width: 570px) {
+  .personal__descr::after {
+    display: none;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal__item {
+  background: #245963;
+  width: 370px;
+}
+
+.personal__item-1 {
+  border-top: 7px solid #e84c3d;
+}
+
+.personal__item-2 {
+  border-top: 7px solid #fdbd1f;
+}
+
+.personal__item-3 {
+  border-top: 7px solid #1bbc9b;
+}
+
+.perconal-photo {
+  margin-top: 50px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.personal__text {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #76b2be;
+  width: 85%;
+  display: inline-block;
+  margin-bottom: 43px;
+}
+
+.personal__button {
+  margin-bottom: 60px;
+  position: relative;
+  width: 102px;
+  display: inline-block;
+}
+
+.pers__button-1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  background: #e84c3d;
+  padding: 8px 21px;
+}
+
+.pers__button-1::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 10px 0 10px;
+  border-color: #e84c3d transparent transparent transparent;
+  position: absolute;
+  top: 27px;
+  left: 45px;
+}
+
+.pers__button-2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  background: #fdbd1f;
+  padding: 8px 21px;
+}
+
+.pers__button-2::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 10px 0 10px;
+  border-color: #fdbd1f transparent transparent transparent;
+  position: absolute;
+  top: 27px;
+  left: 45px;
+}
+
+.pers__button-3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  background: #1bbc9b;
+  padding: 8px 21px;
+}
+
+.pers__button-3::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 10px 0 10px;
+  border-color: #1bbc9b transparent transparent transparent;
+  position: absolute;
+  top: 27px;
+  left: 45px;
 }
