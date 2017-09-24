@@ -334,6 +334,10 @@ img {
   margin-bottom: 54px;
 }
 
+.personal {
+  margin-bottom: 24px;
+}
+
 .personal__container {
   text-align: center;
 }
@@ -349,13 +353,13 @@ img {
 }
 
 .line {
-  width: 430px;
+  width: 70%;
   margin-bottom: 64px;
   position: relative;
   display: inline-block;
 }
 
-.personal__descr {
+.container__descr {
   display: block;
   color: #fff;
   font-family: "Fjalla One", sans-serif;
@@ -364,44 +368,58 @@ img {
   font-size: 21px;
 }
 
-.personal__descr::before {
+.container__descr::before {
   content: "";
   height: 1px;
-  width: 130px;
+  width: 30%;
   background: #387d89;
   position: absolute;
   top: 50%;
-  left: -127px;
+  left: -65px;
 }
-@media screen and (max-width: 570px) {
-  .personal__descr::before {
+@media screen and (max-width: 1124px) {
+  .container__descr::before {
     display: none;
   }
 }
 
-.personal__descr::after {
+.container__descr::after {
   content: "";
   height: 1px;
-  width: 130px;
+  width: 30%;
   background: #387d89;
   position: absolute;
   top: 50%;
-  right: -127px;
+  right: -65px;
 }
-@media screen and (max-width: 570px) {
-  .personal__descr::after {
+@media screen and (max-width: 1124px) {
+  .container__descr::after {
     display: none;
   }
 }
 
 .item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (max-width: 1124px) {
+  .item {
+    justify-content: space-around;
+  }
 }
 
 .personal__item {
   background: #245963;
   width: 370px;
+}
+@media screen and (max-width: 1124px) {
+  .personal__item {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
 }
 
 .personal__item-1 {
@@ -419,7 +437,7 @@ img {
 .perconal-photo {
   margin-top: 50px;
   border-radius: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 }
 
 .personal__text {
@@ -428,11 +446,12 @@ img {
   color: #76b2be;
   width: 85%;
   display: inline-block;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
+  line-height: 26px;
 }
 
 .personal__button {
-  margin-bottom: 60px;
+  margin-bottom: 69px;
   position: relative;
   width: 102px;
   display: inline-block;
@@ -502,4 +521,299 @@ img {
   position: absolute;
   top: 27px;
   left: 45px;
+}
+
+.form__container {
+  text-align: center;
+}
+
+.image-bg {
+  margin-top: 58px;
+  display: inline-block;
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.mail {
+  margin-bottom: 21px;
+}
+
+.form__title {
+  display: block;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 29px;
+  margin-bottom: 9px;
+}
+
+.form__descr {
+  display: block;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.form__descr::before {
+  content: "";
+  height: 1px;
+  width: 80px;
+  background: #387d89;
+  position: absolute;
+  top: 50%;
+  left: 155px;
+}
+@media screen and (max-width: 570px) {
+  .form__descr::before {
+    display: none;
+  }
+}
+
+.form__descr::after {
+  content: "";
+  height: 1px;
+  width: 72px;
+  background: #387d89;
+  position: absolute;
+  top: 50%;
+  right: 164px;
+}
+@media screen and (max-width: 570px) {
+  .form__descr::after {
+    display: none;
+  }
+}
+
+.form-line {
+  margin-bottom: 34px;
+}
+
+.form-fields {
+  width: 570px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media screen and (max-width: 570px) {
+  .form-fields {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
+
+.name {
+  display: block;
+  background: #245963;
+  border: 1px solid #387d89;
+  height: 46px;
+  width: 270px;
+  padding-left: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 570px) {
+  .name {
+    width: 100%;
+  }
+}
+
+.password {
+  display: inline-block;
+  background: #245963;
+  border: 1px solid #387d89;
+  height: 46px;
+  width: 270px;
+  padding-left: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 570px) {
+  .password {
+    width: 100%;
+  }
+}
+
+.textarea {
+  display: inline-block;
+  width: 570px;
+  height: 126px;
+  background: #245963;
+  border: 1px solid #387d89;
+  padding-left: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 570px) {
+  .textarea {
+    width: 100%;
+  }
+}
+
+.button {
+  display: block;
+  width: 144px;
+  height: 56px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.form-button {
+  margin-bottom: 71px;
+}
+
+.btn-form {
+  display: inline-block;
+  background: #245963;
+  font-size: 15px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  padding: 9px 29px;
+  border-top: 1px solid #387d89;
+  border-left: 1px solid #387d89;
+  border-right: 1px solid #387d89;
+  text-decoration: none;
+}
+
+.btn-form::before {
+  content: "";
+  background: #387d89;
+  width: 41px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 18px;
+  left: 21px;
+}
+
+.btn-form::after {
+  content: "";
+  background: #387d89;
+  width: 39px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 18px;
+  right: 22px;
+}
+
+.triangle-form {
+  width: 16px;
+  height: 16px;
+  background: #245963;
+  border-left: 1px solid #387d89;
+  border-bottom: 1px solid #387d89;
+  display: block;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 64px;
+  top: 29px;
+}
+
+.footer {
+  background: #245963;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.info {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  display: inline;
+  padding-right: 15px;
+}
+
+.social {
+  padding-top: 41px;
+  position: relative;
+  margin-bottom: 65px;
+  display: inline-block;
+  width: 375px;
+}
+
+.social::after {
+  content: "";
+  width: 283px;
+  height: 1px;
+  background: #387d89;
+  position: absolute;
+  bottom: -32px;
+  left: 53px;
+}
+
+.facebook {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.fa-facebook {
+  color: #245963;
+  font-size: 18px;
+  position: absolute;
+  top: 11px;
+  left: 13px;
+}
+
+.twitter {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.fa-twitter {
+  color: #245963;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+
+.phone {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  display: inline;
+  padding-left: 15px;
+}
+
+.copyright {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  padding-right: 15px;
+  padding-bottom: 39px;
+  letter-spacing: 0.05em;
+}
+.copyright .design {
+  color: #fdbd1f;
 }

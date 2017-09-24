@@ -1,3 +1,6 @@
+.personal
+  margin-bottom: 24px
+
 .personal__container
   text-align: center
 
@@ -11,12 +14,12 @@
   margin-bottom: 9px
 
 .line
-  width: 430px
+  width: 70%
   margin-bottom: 64px
   position: relative
   display: inline-block
 
-.personal__descr
+.container__descr
   display: block
   color: $text-color
   font-family: $ff-main
@@ -24,35 +27,43 @@
   text-transform: uppercase
   font-size: 21px
 
-.personal__descr::before
+.container__descr::before
   content: ""
   height: 1px
-  width: 130px
+  width: 30%
   background: #387d89
   position: absolute
   top: 50%
-  left: -127px
-  +md
+  left: -65px
+  +large
     display: none
 
-.personal__descr::after
+.container__descr::after
   content: ""
   height: 1px
-  width: 130px
+  width: 30%
   background: #387d89
   position: absolute
   top: 50%
-  right: -127px
-  +md
+  right: -65px
+  +large
     display: none
 
 .item
   display: flex
-  justify-content: space-between
+  justify-content: space-around
+  flex-direction: row
+  flex-wrap: wrap
+  width: 100%
+  +large
+    justify-content: space-around
 
 .personal__item
   background: $main-color
   width: 370px
+  +large
+    flex-direction: column
+    margin-bottom: 25px
 
 .personal__item-1
   border-top: 7px solid #e84c3d
@@ -66,7 +77,7 @@
 .perconal-photo
   margin-top: 50px
   border-radius: 50%
-  margin-bottom: 40px
+  margin-bottom: 18px
 
 .personal__text
   font-size: 16px
@@ -74,10 +85,11 @@
   color: #76b2be
   width: 85%
   display: inline-block
-  margin-bottom: 43px
+  margin-bottom: 40px
+  line-height:  26px
 
 .personal__button
-  margin-bottom: 60px
+  margin-bottom: 69px
   position: relative
   width: 102px
   display: inline-block
