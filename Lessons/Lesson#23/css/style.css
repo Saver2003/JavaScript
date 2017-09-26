@@ -156,3 +156,29 @@ h1, h2, h3, h4, h5, h6, p {
 .block .field:focus:-ms-input-placeholder {
   color: transparent;
 }
+
+.icon-fb, .icon-ytb, .icon-tw, .icon-vk, .icon-gplus {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.icon-fb {
+  background-image: url(../img/fb.png);
+}
+
+.icon-ytb {
+  background-image: url(../img/ytb.png);
+}
+
+.icon-tw {
+  background-image: url(../img/tw.png);
+}
+
+.icon-vk {
+  background-image: url(../img/vk.png);
+}
+
+.icon-gplus {
+  background-image: url(../img/gplus.png);
+}

@@ -57,3 +57,13 @@ h1, h2, h3, h4, h5, h6, p
     &:focus
       +placeholder()
         color: transparent
+
+%icon
+  width: 16px
+  height: 16px
+  display: inline-block
+
+@each $icon in fb, ytb, tw, vk, gplus
+  .icon-#{$icon}
+    background-image: url(../img/#{$icon}.png)
+    @extend %icon
