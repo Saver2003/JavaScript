@@ -1,14 +1,58 @@
 .footer
   background:
     image: url(../img/bg-footer.jpg)
-    repeat: repeat-x
+    repeat: repeat
+    // repeat: repeat-y
   height: 386px
   border-top: 8px solid #ea5a4b
+  +tablet
+    height: 200%
 
 .footer-block__footer-items
   display: flex
   justify-content: space-between
   flex-direction: row
+  +lg
+    flex-wrap: wrap
+
 
 .footer-item
-  width: 33%
+  width: 32%
+  margin-top: 50px
+  +lg
+    margin-left: 20px
+    width: 70%
+
+.footer-title
+  color: #fff
+  font-size: 14px
+  text-transform: uppercase
+
+.text
+  font-family: $add-font
+  color: #adadad
+
+.text--change
+  padding: 20px 0 10px
+
+
+.footer-list-item
+  border-bottom: 1px solid #3b3b3b
+  padding: 20px 0
+
+.footer-list-item:last-child
+  border-bottom: none
+
+.social-icons
+  margin-top: 22px
+
+%icon
+  width: 30px
+  height: 30px
+  display: inline-block
+  margin: 0 4px 4px 0
+
+@each $icon in rss, facebook, twitter, email, tumblr, path, vimeo, zerply, picasa, stumble_upon, skype, reddit, evernote, behance, dribble, digg, blogger, flickr, linkedin, google_plus
+    .ic-#{$icon}
+      background-image: url(../img/#{$icon}.png)
+      @extend %icon

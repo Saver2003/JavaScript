@@ -48,15 +48,16 @@ img { border-style: none; }
 @media screen and (max-width: 950px) { .logo { padding-left: 20px; } }
 
 .block-nav__btn-nav { display: none; }
-@media screen and (max-width: 490px) { .block-nav__btn-nav { display: block; float: right; margin: 20px 40px 0 0; } }
+@media screen and (max-width: 490px) { .block-nav__btn-nav { display: block; float: right; margin: 20px 40px 0 0; position: relative; padding-left: 15px; } }
 
 .fa-bars { font-size: 20px; }
 
-.block-nav:hover .nav-list { display: block; }
+.block-nav:hover .nav-list { display: inline-block; }
+@media screen and (max-width: 490px) { .block-nav:hover .nav-list { position: absolute; top: 49px; right: 57px; z-index: 2; } }
 
 .nav-list { list-style: none; display: block; overflow: hidden; margin: 0; padding-top: 19px; float: right; padding-right: 33px; }
 @media screen and (max-width: 950px) { .nav-list { padding-right: 20px; } }
-@media screen and (max-width: 490px) { .nav-list { padding-left: 0; float: none; text-align: right; display: none; } }
+@media screen and (max-width: 490px) { .nav-list { padding-left: 0; float: none; text-align: right; display: none; background-color: rgba(255, 255, 255, 0.8); margin-left: 0; } }
 
 .block-nav__nav-item { float: left; display: block; overflow: hidden; margin-left: 25px; }
 @media screen and (max-width: 490px) { .block-nav__nav-item { float: none; margin-bottom: 6px; } }
@@ -86,7 +87,7 @@ img { border-style: none; }
 @media screen and (max-width: 950px) { .card-bloc__cards { flex-wrap: wrap; } }
 
 .card-item { margin: 0 auto; }
-@media screen and (max-width: 950px) { .card-item { text-align: center; margin-bottom: 25px; } }
+@media screen and (max-width: 950px) { .card-item { text-align: center; margin-bottom: 81px; } }
 
 .cards-icon { width: 31px; height: 31px; background-color: #25282a; position: relative; display: inline-block; vertical-align: middle; }
 
@@ -97,8 +98,65 @@ img { border-style: none; }
 .cards-text { font-size: 14px; color: #5c5c5c; width: 87%; line-height: 18px; }
 @media screen and (max-width: 950px) { .cards-text { width: 52%; margin: 0 auto; } }
 
-.footer { background-image: url(../img/bg-footer.jpg); background-repeat: repeat-x; height: 386px; border-top: 8px solid #ea5a4b; }
+.footer { background-image: url(../img/bg-footer.jpg); background-repeat: repeat; height: 386px; border-top: 8px solid #ea5a4b; }
+@media screen and (max-width: 490px) { .footer { height: 200%; } }
 
 .footer-block__footer-items { display: flex; justify-content: space-between; flex-direction: row; }
+@media screen and (max-width: 950px) { .footer-block__footer-items { flex-wrap: wrap; } }
 
-.footer-item { width: 33%; }
+.footer-item { width: 32%; margin-top: 50px; }
+@media screen and (max-width: 950px) { .footer-item { margin-left: 20px; width: 70%; } }
+
+.footer-title { color: #fff; font-size: 14px; text-transform: uppercase; }
+
+.text { font-family: "Bitter", serif; color: #adadad; }
+
+.text--change { padding: 20px 0 10px; }
+
+.footer-list-item { border-bottom: 1px solid #3b3b3b; padding: 20px 0; }
+
+.footer-list-item:last-child { border-bottom: none; }
+
+.social-icons { margin-top: 22px; }
+
+.ic-rss, .ic-facebook, .ic-twitter, .ic-email, .ic-tumblr, .ic-path, .ic-vimeo, .ic-zerply, .ic-picasa, .ic-stumble_upon, .ic-skype, .ic-reddit, .ic-evernote, .ic-behance, .ic-dribble, .ic-digg, .ic-blogger, .ic-flickr, .ic-linkedin, .ic-google_plus { width: 30px; height: 30px; display: inline-block; margin: 0 4px 4px 0; }
+
+.ic-rss { background-image: url(../img/rss.png); }
+
+.ic-facebook { background-image: url(../img/facebook.png); }
+
+.ic-twitter { background-image: url(../img/twitter.png); }
+
+.ic-email { background-image: url(../img/email.png); }
+
+.ic-tumblr { background-image: url(../img/tumblr.png); }
+
+.ic-path { background-image: url(../img/path.png); }
+
+.ic-vimeo { background-image: url(../img/vimeo.png); }
+
+.ic-zerply { background-image: url(../img/zerply.png); }
+
+.ic-picasa { background-image: url(../img/picasa.png); }
+
+.ic-stumble_upon { background-image: url(../img/stumble_upon.png); }
+
+.ic-skype { background-image: url(../img/skype.png); }
+
+.ic-reddit { background-image: url(../img/reddit.png); }
+
+.ic-evernote { background-image: url(../img/evernote.png); }
+
+.ic-behance { background-image: url(../img/behance.png); }
+
+.ic-dribble { background-image: url(../img/dribble.png); }
+
+.ic-digg { background-image: url(../img/digg.png); }
+
+.ic-blogger { background-image: url(../img/blogger.png); }
+
+.ic-flickr { background-image: url(../img/flickr.png); }
+
+.ic-linkedin { background-image: url(../img/linkedin.png); }
+
+.ic-google_plus { background-image: url(../img/google_plus.png); }
