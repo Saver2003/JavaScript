@@ -2,11 +2,10 @@
   background:
     image: url(../img/bg-footer.jpg)
     repeat: repeat
-    // repeat: repeat-y
   height: 386px
   border-top: 8px solid #ea5a4b
-  +tablet
-    height: 200%
+  +lg
+    height: 155%
 
 .footer-block__footer-items
   display: flex
@@ -14,14 +13,21 @@
   flex-direction: row
   +lg
     flex-wrap: wrap
+    justify-content: center
 
+.footer-wrap
+  display: inline-block
+  width: 32%
+  +lg
+    width: 52%
+    +tablet
+      width: 100%
 
 .footer-item
-  width: 32%
+  width: 298px!important
   margin-top: 50px
   +lg
     margin-left: 20px
-    width: 70%
 
 .footer-title
   color: #fff

@@ -6,13 +6,21 @@
   margin-bottom: 40px
   +lg
     flex-wrap: wrap
+    padding-left: 0
+    +tablet
+        justify-content: flex-start
+        margin-left: 20px
+        margin-bottom: 15px
 
 .card-item
-  margin: 0 auto
+  width: 300px!important
   +lg
-    text-align: center
     margin-bottom: 81px
 
+.card-wrap
+  width: 100%
+  +lg
+    width: 52%
 .cards-icon
   width: 31px
   height: 31px
@@ -42,8 +50,7 @@
 .cards-text
   font-size: 14px
   color: #5c5c5c
-  width: 87%
+  width: 88%
   line-height: 18px
   +lg
-    width: 52%
-    margin: 0 auto
+    width: 88%
