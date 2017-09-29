@@ -42,6 +42,8 @@ img { border-style: none; }
 
 @media screen and (max-width: 950px) { .top-bar__container { padding-right: 20px; } }
 
+.top-bar_icon-link:hover .top-bar__icon { color: #ea5a4b; }
+
 .nav-bar { height: 56px; }
 
 .logo { padding-top: 11px; display: inline-block; float: left; }
@@ -72,7 +74,7 @@ img { border-style: none; }
 @media screen and (max-width: 950px) { .pic-block__container { padding: 130px 20px 0; } }
 
 .pic-block-text-1 { display: block; font-size: 24px; font-family: "Bitter", serif; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.8); padding: 5px 13px 8px 13px; width: 38%; line-height: 30px; margin-bottom: 1px; }
-@media screen and (max-width: 950px) { .pic-block-text-1 { text-align: center; width: 100%; } }
+@media screen and (max-width: 950px) { .pic-block-text-1 { text-align: center; margin-top: 50px; width: 100%; } }
 @media screen and (max-width: 490px) { .pic-block-text-1 { width: 100%; } }
 
 .pic-block-text-2 { display: block; font-size: 24px; font-family: "Bitter", serif; font-weight: bold; color: #fff; background: rgba(0, 0, 0, 0.8); padding: 5px 0 8px 13px; width: 32%; line-height: 30px; margin-bottom: 1px; }
@@ -83,7 +85,7 @@ img { border-style: none; }
 @media screen and (max-width: 950px) { .pic-block-text-3 { text-align: center; width: 100%; } }
 @media screen and (max-width: 490px) { .pic-block-text-3 { width: 100%; } }
 
-.card-bloc__cards { padding-left: 3%; display: flex; flex-direction: row; justify-content: space-around; margin-bottom: 40px; }
+.card-bloc__cards { padding-left: 3%; display: flex; flex-direction: row; justify-content: space-around; margin-bottom: 81px; }
 @media screen and (max-width: 950px) { .card-bloc__cards { flex-wrap: wrap; padding-left: 0; } }
 @media screen and (max-width: 950px) and (max-width: 490px) { .card-bloc__cards { justify-content: flex-start; margin-left: 20px; margin-bottom: 15px; } }
 
@@ -112,16 +114,16 @@ img { border-style: none; }
 @media screen and (max-width: 950px) { .footer-wrap { width: 52%; } }
 @media screen and (max-width: 950px) and (max-width: 490px) { .footer-wrap { width: 100%; } }
 
-.footer-item { width: 298px !important; margin-top: 50px; }
+.footer-item { width: 298px !important; margin-top: 67px; }
 @media screen and (max-width: 950px) { .footer-item { margin-left: 20px; } }
 
 .footer-title { color: #fff; font-size: 14px; text-transform: uppercase; }
 
-.text { font-family: "Bitter", serif; color: #adadad; }
+.text { font-family: "Bitter", serif; color: #adadad; font-weight: bold; font-size: 14px; }
 
-.text--change { padding: 20px 0 10px; }
+.text--change { padding: 17px 0 18px 0; }
 
-.footer-list-item { border-bottom: 1px solid #3b3b3b; padding: 20px 0; }
+.footer-list-item { border-bottom: 1px solid #3b3b3b; padding: 15px 0; }
 
 .footer-list-item:last-child { border-bottom: none; }
 
